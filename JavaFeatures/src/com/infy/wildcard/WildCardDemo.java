@@ -7,14 +7,14 @@ class Record<E>{
 	List<E> record = new ArrayList<>();
 	
 	public String toString() {
-		return "Record[ record"+record+"]";
+		return "Record[record"+record+"]";
 	}
 	
 	public void add(E e) {
 		record.add(e);
 	}
 	
-	public void display() {
+	public void display(Record<? extends Student> record) {
 		System.out.println(record);
 	}
 }
@@ -58,8 +58,8 @@ public class WildCardDemo {
 		studentRecord.add(student);
 		dayScholarRecord.add(dayScolar);
 		
-		studentRecord.display();
-		dayScholarRecord.display();
+		studentRecord.display(studentRecord);
+		dayScholarRecord.display(dayScholarRecord);
 
 	}
 
