@@ -1,0 +1,3 @@
+English:77
+Maths:77
+Science:91
