@@ -9,6 +9,7 @@ public class FileReaderDemo {
 		FileReader file1 = new FileReader("johnTerm1.txt");
 		FileReader file2 = new FileReader("johnTerm2.txt");
 		FileWriter file3 = new FileWriter("johnTerms.txt");
+		 
 		
 		int i = file1.read();
 		int j = file2.read();
